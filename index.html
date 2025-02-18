@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación Especial</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            flex-direction: column;
+            font-family: 'Times New Roman', serif;
+            text-align: center;
+        }
+
+        /* Estilos para la imagen */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para el mensaje */
+        .message {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilos para los botones */
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: 'Times New Roman', serif;
+            cursor: pointer;
+            border: none;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen de invitación -->
+    <img src="https://i.imgur.com/4zimqQh.jpeg" alt="Imagen de invitación">
+
+    <!-- Mensaje -->
+    <div class="message">Hola, Angie tiene un mensaje para ti. ¿Quieres verlo?</div>
+
+    <!-- Botones -->
+    <div class="buttons">
+        <button id="noButton">No</button>
+        <button id="siButton">Sii</button>
+    </div>
+
+    <script>
+        // Redireccionar al hacer clic en "No"
+        document.getElementById('noButton').addEventListener('click', function() {
+            window.location.href = 'https://www.google.com/search?sca_esv=c6b583333c988112&rlz=1CAZQNI_enMX1038MX1038&sxsrf=AHTn8zqfeuO-xyN6Tln1k9h-E3HDWuMj6A:1739832065410&q=barbie+fish+meme&udm=2&fbs=ABzOT_BnMAgCWdhr5zilP5f1cnRvK9uZj3HA_MTJAA6lXR8yQElaIApxtef1-RKg2CcwxXYFPnQ3n4nbwZZO6RCmbc-sVkN_BQ6_z1ANB9mYmPFEp97WY3ayvO-7V82OFzytK9VRYqgUY3XSVxVh0kdBwZAkbJ64XyMBQKHKA25BBzYDNgDe9YsvqARoa2MJV-v0GmJwRwYx2C2Xjgq8hQO1EmF4GZfmOQ&sa=X&ved=2ahUKEwit1ujB48uLAxWUGEQIHUnEEYsQtKgLegQIERAB&biw=1488&bih=778&dpr=1.25';
+        });
+
+        // Redireccionar al hacer clic en "Sii"
+        document.getElementById('siButton').addEventListener('click', function() {
+            window.location.href = 'https://drive.google.com/drive/folders/1xEqF5bkKUcsC7N6BtteYg3qQAT1V7j0T?usp=drive_link';
+        });
+    </script>
+</body>
+</html>
